@@ -1,0 +1,59 @@
+.justify {
+  text-align: justify;
+}
+.user {
+  background: url("../images/profile.jpeg") no repeat center center fixed;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.jumbopic {
+  background: url("../images/adventure.jpeg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  background-position: 100% 125%;
+}
+.img-circle {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+
+.textbg {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: 8px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.65);
+  border: 2px solid;
+  border-color: transparent;
+  padding: 12px;
+}
+svg {
+  height: 50%;
+  width: 50%;
+}
+path {
+  fill: white;
+  stroke: black;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+path:hover {
+  fill: aliceblue;
+  stroke: lightskyblue;
+}
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}

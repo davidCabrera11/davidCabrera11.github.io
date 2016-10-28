@@ -15,6 +15,37 @@ description2: >
     nulla pariatur. Excepteur sint occaecat cupidatat non proident,
     sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+intro: >
+    INTRO,
+    consectetur adipisicing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+header1: Sample Work Experience
+description1: >
+    DESCRIPTION 1,
+    consectetur adipisicing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum.
+header2: Sample Projects Experience
+description2: >
+    DESCRIPTION 2,
+    consectetur adipisicing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 ---
 
 <div class="jumbotron jumbopic" style="color:black;">
@@ -33,16 +64,13 @@ description2: >
     <div class="row">
       <p class="text-center" style="font-size:20px;"> {{ page.description2 }} </p>
       <hr>
-
-    <h2 class="text-center" style="padding:2em;"> Sample text </h2>
-        {% assign pages = pages %}
-      {% for topic in site.data.topics %}
-	      <div class="col-xs-12 col-sm-4 col-md-4" style="height:16em;">
-	    <a {{ topic.link }} >  <h2> <span class="{{ topic.image }}"> </span> {{ topic.title }}</h2></a>
-            <p style="font-size:1.25em;padding-right:40px;">{{ topic.description }}</p>
-         </div>
-      {% endfor %}
-        </div>
+          <h1 class="text-center"> About Me </h1>
+          <p class="text-center" style="font-size:20px;"> {{ page.intro }} </p>
+          <h2 class="text-center" style="padding:2em;"> {{ page.header1 }} </h2>
+          <p style="font-size:20px;"> {{ page.description1 }}</p> 
+          <h2 class="text-center" style="padding:2em;"> {{ page.header2 }} </h2>
+          <p style="font-size:20px;"> {{ page.description1 }}</p>
+	
     </div>
 	</div>
 </div>
